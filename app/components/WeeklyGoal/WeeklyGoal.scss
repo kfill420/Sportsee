@@ -1,0 +1,36 @@
+.weekly-goal {
+  &__goal {
+    font: var(--text-body-large);
+    color: var(--color-blue-30);
+  }
+
+  &__chart {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font: var(--text-body-small);
+    color: var(--color-grey-70);
+    white-space: nowrap;
+
+    span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    &--remaining {
+      top: 0;
+      right: 0;
+    }
+
+    &--done {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -5,24 +5,28 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
+    "dev:mock": "react-router dev --mode mock",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@react-router/node": "^8.4.0",
     "@react-router/serve": "^8.4.0",
+    "dayjs": "^1.11.23",
     "isbot": "^5.1.36",
+    "js-cookie": "^3.0.8",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router": "^8.4.0"
+    "react-router": "^8.4.0",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
     "@react-router/dev": "^8.4.0",
-    "@tailwindcss/vite": "^4.2.2",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^22",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
-    "tailwindcss": "^4.2.2",
+    "sass": "^1.105.1",
     "typescript": "^5.9.3",
     "vite": "^8.0.3"
   }

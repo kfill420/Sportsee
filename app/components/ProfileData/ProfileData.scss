@@ -1,0 +1,24 @@
+.profile-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  min-height: 96px;
+  padding: 20px 28px;
+  border-radius: 10px;
+  background-color: var(--color-blue-100);
+  color: #fff;
+
+  &__label {
+    font: var(--text-body);
+  }
+
+  &__value {
+    font: var(--text-h4);
+  }
+
+  &__unit {
+    font: var(--text-body-large);
+    color: var(--color-surface--lightblue);
+  }
+}

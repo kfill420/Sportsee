@@ -1,0 +1,61 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px 48px;
+    border-radius: 20px;
+    background-color: var(--color-surface-primary);
+
+    .traveled {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .traveledLabel {
+      font: var(--text-body);
+      color: var(--color-grey-70);
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .sectionTitle {
+      font: var(--text-h4);
+      color: var(--color-text-primary);
+    }
+
+    .sectionSubtitle {
+      margin-top: 12px;
+      font: var(--text-body);
+      color: var(--color-grey-70);
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: start;
+    gap: 24px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .weekStats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

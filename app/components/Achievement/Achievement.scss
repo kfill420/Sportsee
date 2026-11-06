@@ -1,0 +1,17 @@
+.achievement {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 178px;
+  min-height: 87px;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: var(--color-blue-100);
+  color: #fff;
+
+  &__value {
+    font: var(--text-h4);
+    white-space: nowrap;
+  }
+}

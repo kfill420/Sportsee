@@ -1,0 +1,29 @@
+.stats-km {
+  --stats-km-bar: var(--color-blue-30);
+
+  &:hover {
+    --stats-km-bar: var(--color-blue-100);
+  }
+
+  .recharts-bar-rectangle path {
+    transition: fill 0.15s;
+  }
+
+  &__tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: var(--color-grey-100);
+    color: #fff;
+
+    span {
+      font: var(--text-caption);
+    }
+
+    strong {
+      font: var(--text-body);
+    }
+  }
+}

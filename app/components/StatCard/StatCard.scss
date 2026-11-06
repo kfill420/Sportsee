@@ -1,0 +1,34 @@
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 32px;
+  border-radius: 10px;
+  background-color: var(--color-surface-primary);
+
+  &--blue {
+    --stat-card-accent: var(--color-blue-100);
+    --stat-card-unit: var(--color-blue-30);
+  }
+
+  &--orange {
+    --stat-card-accent: var(--color-orange-100);
+    --stat-card-unit: var(--color-orange-30);
+  }
+
+  &__label {
+    font: var(--text-body-small);
+    color: var(--color-grey-70);
+  }
+
+  &__value {
+    font: var(--text-h4);
+    color: var(--stat-card-accent);
+  }
+
+  &__unit {
+    font: var(--text-body);
+    color: var(--stat-card-unit);
+  }
+}

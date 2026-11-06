@@ -1,0 +1,65 @@
+.chart-card {
+  --chart-card-accent: var(--color-blue-100);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 32px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__title {
+    font: var(--text-h4);
+    color: var(--chart-card-accent);
+  }
+
+  &__subtitle {
+    margin-top: 12px;
+    font: var(--text-body-small);
+    color: var(--color-grey-70);
+  }
+
+  &__period {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font: var(--text-body-small);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+
+    .chevron-button {
+      border-radius: 50%;
+    }
+  }
+
+  &__legend {
+    display: flex;
+    gap: 16px;
+    font: var(--text-body-small);
+    color: var(--color-grey-70);
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+
+  &__legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .recharts-text {
+    font: var(--text-body-small);
+    fill: var(--color-grey-70);
+  }
+}

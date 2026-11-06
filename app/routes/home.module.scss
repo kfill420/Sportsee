@@ -1,0 +1,66 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-surface-secondary);
+
+  .right {
+    position: relative;
+    flex: 1;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .left {
+    flex: 1;
+    padding: 120px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .formContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+      width: 400px;
+
+      .logo {
+        position: absolute;
+        top: 40px;
+        left: 0;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-surface-primary);
+        padding: 40px;
+        gap: 40px;
+
+        border-radius: 20px;
+
+        .title {
+          color: var(--color-surface-blue);
+          font: var(--text-h3);
+        }
+
+        .subtitle {
+          color: var(--color-text-primary);
+          font: var(--text-h4);
+        }
+
+        .error {
+          color: var(--color-orange-100);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.nav {
+  display: inline-flex;
+  padding: 16px 46px;
+  border-radius: 999px;
+  background-color: #fff;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    font: var(--text-body);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    transition: color 0.15s;
+
+    &:hover,
+    &--active {
+      color: var(--color-blue-100);
+    }
+  }
+
+  &__logout {
+    padding-left: 38px;
+    border-left: 1px solid var(--color-blue-50);
+
+    .nav__link {
+      color: var(--color-blue-100);
+    }
+  }
+}

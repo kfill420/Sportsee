@@ -1,0 +1,12 @@
+.stats-bpm {
+  --chart-card-accent: var(--color-orange-100);
+  --stats-bpm-line: var(--color-surface-secondary);
+
+  &:hover {
+    --stats-bpm-line: var(--color-blue-100);
+  }
+
+  .recharts-line-curve {
+    transition: stroke 0.15s;
+  }
+}

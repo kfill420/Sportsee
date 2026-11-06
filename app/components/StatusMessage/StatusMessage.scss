@@ -1,0 +1,15 @@
+.status-message {
+  padding: 48px 32px;
+  border-radius: 10px;
+  background-color: var(--color-surface-primary);
+  font: var(--text-body);
+  text-align: center;
+
+  &--loading {
+    color: var(--color-grey-70);
+  }
+
+  &--error {
+    color: var(--color-orange-100);
+  }
+}

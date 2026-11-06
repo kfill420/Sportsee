@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 96px;
+  background-color: var(--color-surface-primary);
+  font: var(--text-body-small);
+  color: var(--color-text-primary);
+
+  &__copyright,
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

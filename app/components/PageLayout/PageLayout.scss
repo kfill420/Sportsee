@@ -1,0 +1,29 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-surface-secondary);
+
+  &__header,
+  &__main {
+    width: 100%;
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__main {
+    flex: 1;
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+}
